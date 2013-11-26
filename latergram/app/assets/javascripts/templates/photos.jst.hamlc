@@ -1,0 +1,7 @@
+%h4 Photo Results
+
+
+%ul
+- for photo in @photos
+  %p
+    %img{:src => photo["images"]["standard_resolution"]["url"]}
