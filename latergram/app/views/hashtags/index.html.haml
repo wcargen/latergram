@@ -1,0 +1,13 @@
+.hashtag_search
+    %input#hashtag{type: 'text', placeholder: 'Enter a hashtag'}
+    %input#search{type: 'submit', value: 'Search'}
+
+.photos
+
+<div id="hashtag_save">
+  <%= form_for @hashtag do |f| %>
+    <%= f.text_field :name %>
+    <%= f.submit "Save hashtag" %>
+  <% end %>
+</div>
+

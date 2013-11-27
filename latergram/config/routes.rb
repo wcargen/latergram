@@ -1,8 +1,10 @@
 Latergram::Application.routes.draw do
 
+  get "photos/index"
+
   devise_for :users
 
-  root to: "photos#index"
+  root to: "hashtags#index"
 
-  resources :users, :photos
+  resources :users, :hashtags
 end
